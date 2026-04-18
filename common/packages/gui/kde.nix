@@ -106,6 +106,7 @@ pkgs:
     konversation
     korganizer
     # kpat # failed to build because of libkdegames -> 7zz
+    krdp
     # kreversi # failed to build because of libkdegames -> 7zz
     # ksirk # failed to build because of libkdegames -> 7zz
     # ksshaskpass
@@ -130,15 +131,16 @@ pkgs:
     # plasma-panel-spacer-extended
     # plasma-pass
     # ``plasma-thunderbolt
-    plasma-vault
+    # plasma-vault # fails
     plasmatube
     plymouth-kcm
     phonon
     # phonon-backend-gstreamer
-    step
+    # 
+    # step # no longer builds
     sweeper
     tokodon
-    wallpaper-engine-plugin
+    # wallpaper-engine-plugin # error: Cannot build '/nix/store/prhrqxssyl3c28wip5j55vl7pdkdh29q-wallpaper-engine-kde-plugin-0.5.4-unstable-2025-06-29.drv'
     xdg-desktop-portal-kde # ???
     yakuake
     # kdeconnect-kde # dealt with
