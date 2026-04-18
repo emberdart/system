@@ -23,9 +23,9 @@ in
   home-manager.users.dwd = import ./users/dwd/home.nix { inherit pkgs; isDesktop = true; };
 
   # Don't do this for servers!
-  specialisation.testing.configuration = {
-    boot.kernelPackages = lib.mkForce pkgs.linuxPackages_testing; # linuxKernel.kernels.linux_testing
-  };
+  #specialisation.testing.configuration = {
+  #  boot.kernelPackages = lib.mkForce pkgs.linuxPackages_testing; # linuxKernel.kernels.linux_testing
+  #};
 
   # specialisation.musl.configuration = {
   #   system = "x86_64-linux-musl";
