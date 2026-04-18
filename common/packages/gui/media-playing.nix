@@ -13,7 +13,7 @@ with pkgs; [
     kaffeine
     vlc
     gnome-network-displays
-    guvcview
+    # guvcview # FF_PROFILE consts undeclared - maybe they should update to AV
 ] ++ (if builtins.currentSystem == "x86_64-linux" then [
     # mplayer # no longer builds
     spotify
