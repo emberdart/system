@@ -133,23 +133,25 @@ with pkgs; [
     # trigger # no desktop icon
     # tumiki-fighters # prisms vs prisms
     # dunno how to launch
-    ue4demos.black_jack
-    ue4demos.blueprint_examples_demo
-    ue4demos.card_game
-    ue4demos.effects_cave_demo
-    ue4demos.elemental_demo
-    ue4demos.landscape_mountains
-    ue4demos.matinee_demo
-    ue4demos.mobile_temple_demo
-    ue4demos.realistic_rendering
-    ue4demos.reflections_subway
-    ue4demos.scifi_hallway_demo
-    ue4demos.shooter_game
-    ue4demos.strategy_game
-    ue4demos.stylized_demo
-    ue4demos.swing_ninja
-    ue4demos.tappy_chicken
-    ue4demos.vehicle_game
+
+    # fails to download anyway
+    # ue4demos.black_jack
+    # ue4demos.blueprint_examples_demo
+    # ue4demos.card_game
+    # ue4demos.effects_cave_demo
+    # ue4demos.elemental_demo
+    # ue4demos.landscape_mountains
+    # ue4demos.matinee_demo
+    # ue4demos.mobile_temple_demo
+    # ue4demos.realistic_rendering
+    # ue4demos.reflections_subway
+    # ue4demos.scifi_hallway_demo
+    # ue4demos.shooter_game
+    # ue4demos.strategy_game
+    # ue4demos.stylized_demo
+    # ue4demos.swing_ninja
+    # ue4demos.tappy_chicken
+    # ue4demos.vehicle_game
     # uhexen2 # fails to build
     ultimatestunts
     unnamed-sdvx-clone
