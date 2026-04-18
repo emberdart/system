@@ -13,7 +13,7 @@ with pkgs; [
     inkscape
     krita
 ] ++ (if builtins.currentSystem == "x86_64-linux" then [
-    dia
+    # dia # ../plug-ins/pdf/pdf-import.cpp:728:16: error: 'class GooString' has no member named 'getLength'
 ] else [
    # pkgs-x86_64.dia
 ])
