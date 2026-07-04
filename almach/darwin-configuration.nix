@@ -4,7 +4,7 @@ let nixpkgs = import <nixpkgs> {
       allowUnfree = true;
     };
   };
-  hostName = "almach";
+  hostname = "almach";
 in
 {
   # List packages installed in system profile. To search by name, run:
@@ -166,9 +166,9 @@ in
   programs.zsh.enable = true;
   # programs.fish.enable = true;
 
-  networking.hostName = hostName;
+  networking.hostname = hostname;
 
-  nix.settings.trusted-users = [ "dwd" ];
+  nix.settings.trusted-users = [ "ember" ];
   
   # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
