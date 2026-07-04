@@ -17,6 +17,7 @@ with pkgs; [
     hub
     git-crypt
     git-lfs
+    # neovim
     vim # plugins?
     # xcodebuild
 ] ++ (if builtins.currentSystem == "x86_64-linux" then [
