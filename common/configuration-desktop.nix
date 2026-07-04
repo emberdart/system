@@ -1,31 +1,28 @@
 # man 5 configuration.nix
 # nixos-help
-{ config, pkgs, lib, hostName, internalIPv4, externalIPv4, localIPv6, globalIPv6, fqdn, ... }:
-let
-  rootDir = "/home/dwd/code/mine/nix/system";
-  hostDir = "${rootDir}/${hostName}";
-  privateDir = "${hostDir}/private";
-in
+{ config, pkgs, lib, hostname, domain, username, homeDirectory, internalIPv4, externalIPv4, localIPv6, globalIPv6, ... }:
 {
   imports =
     [
       ./configuration-common.nix
+      ./environment.nix
+      ./hardware.nix
+      ./networking.nix
+      ./programs.nix
+      ./security.nix
+      ./services.nix
+      ./systemd.nix
+      ./users/ember/home.nix
     ];
-
-  environment = import ./environment.nix { inherit pkgs;  inherit config; inherit lib; systemPackages = import ./packages/packages.nix pkgs;};
-  hardware = import ./hardware.nix { inherit pkgs; isDesktop = true; };
-  networking = import ./networking.nix { inherit pkgs; inherit lib; inherit hostName; isDesktop = true; };
-  programs = import ./programs.nix { inherit pkgs; isDesktop = true; };
-  security = import ./security.nix { inherit pkgs; inherit lib; isDesktop = true; inherit hostName; inherit privateDir; };
-  services = import ./services.nix { inherit pkgs; inherit hostName; inherit hostDir; inherit privateDir; inherit internalIPv4; inherit externalIPv4; inherit localIPv6; inherit globalIPv6; inherit fqdn; isDesktop = true; };
-  systemd = import ./systemd.nix { inherit lib; inherit pkgs; inherit privateDir; isDesktop = true; };
   
-  home-manager.users.dwd = import ./users/dwd/home.nix { inherit pkgs; isDesktop = true; };
-
   # Don't do this for servers!
   #specialisation.testing.configuration = {
   #  boot.kernelPackages = lib.mkForce pkgs.linuxPackages_testing; # linuxKernel.kernels.linux_testing
   #};
+
+  # specialisation.NVIDIA_Open.configuration = {
+  #   hardware.nvidia.open = lib.mkForce true;
+  # };
 
   # specialisation.musl.configuration = {
   #   system = "x86_64-linux-musl";

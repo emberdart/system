@@ -95,7 +95,7 @@
     #    haskellPackages.xmonad-contrib
     #    haskellPackages.monad-logger
     #  ];
-    #  haskellPackages = haskell.packages.ghc912;
+    #  haskellPackages = haskell.packages.ghc914;
     #};
 
 
@@ -103,7 +103,7 @@
     #logcheck = {
     #  enable = true;
     #  level = "paranoid";
-    #  mailTo = "logcheck@dandart.co.uk";
+    #  mailTo = "logcheck@${domain}";
     #};
 
     services.i2p = /*

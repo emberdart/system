@@ -1,4 +1,4 @@
 { pkgs, isDesktop, ... }:
 {
-  users.dwd = import ./users/dwd/home.nix { inherit pkgs; inherit isDesktop; };
+  users.ember = import ./users/ember/home.nix { inherit pkgs; inherit isDesktop; };
 }

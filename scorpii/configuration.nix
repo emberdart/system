@@ -3,7 +3,7 @@
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
 { config, lib, pkgs, ... }:
-let hostName = "scorpii";
+let 
     impermanence = builtins.fetchTarball {
       url =
         "https://github.com/nix-community/impermanence/archive/master.tar.gz";
@@ -12,12 +12,14 @@ in
 {
     _module = {
         args = {
-            inherit hostName;
-            internalIPv4 = "192.168.1.73";
+            internalIPv4 = "192.168.0.12";
             externalIPv4 = null;
-            localIPv6 = "fe80::abc1:d831:8d0b:6152";
-            globalIPv6 = "2a0b:5f04:16e:1200::9";
-            fqdn = "scorpii.dandart.co.uk";
+            localIPv6 = "fe80::5f45:a07:ee5e:112d";
+            globalIPv6 = null; # boooo
+            hostname = "scorpii";
+            domain = "emberella.co.uk";
+            username = "ember";
+            home = "/home/ember";
             # wifiNetwork
             # wifiPassword
             # bssid24
@@ -29,11 +31,6 @@ in
         ./hardware-configuration.nix
         ../common/configuration-desktop.nix
     ];
-
-    networking.hostName = hostName;
-    networking.domain = "dandart.co.uk";
-
-    services.openssh.banner = "Connection established to ${hostName}. Unauthorised connections are logged.\n";
 
     # This value determines the NixOS release from which the default
     # settings for stateful data, like file locations and database versions

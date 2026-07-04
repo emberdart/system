@@ -202,7 +202,7 @@ in {
   #     # "/root/.nix-channels" # keeps dying
   #   ];
   #   users = {
-  #     dwd = { # todo imports = [ /path/to/impermanence/home-manager.nix ]; & move to home.persistence."/persist/home/dwd" on flag
+  #     ${username} = { # todo imports = [ /path/to/impermanence/home-manager.nix ]; & move to home.persistence."/persist/home/${username}" on flag
   #       directories = [
   #         "code"
   #         "Desktop"

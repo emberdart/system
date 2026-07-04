@@ -1,5 +1,7 @@
 _:
 {
-  timeZone = "Europe/London";
-  hardwareClockInLocalTime = true;
+  time = {
+    timeZone = "Europe/London";
+    hardwareClockInLocalTime = false;
+  };
 }
