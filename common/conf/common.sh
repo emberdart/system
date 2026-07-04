@@ -10,6 +10,7 @@ export DHCP6_SERVER_PORT=547
 export IP6T=ip6tables-nft
 export IP4T=iptables-nft
 export LL6=fe80::/10
+export ULA=fc00::/7
 export LOCAL6_128=::1/128
 export LOCAL4_8=127.0.0.0/8
 export MULTICAST4_4=224.0.0.0/4

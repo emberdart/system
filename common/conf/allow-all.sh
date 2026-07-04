@@ -3,9 +3,8 @@ set -euo pipefail
 trap pwd ERR
 
 # This script gets dumped into the system one instead of being called!
-HERE=/home/dwd/code/mine/nix/system/common/conf
+HERE=$HOME_DIRECTORY/code/mine/nix/system/common/conf
 source $HERE/common.sh
-source $HERE/../private/net/.env
 
 $IP4T -F
 $IP4T -P INPUT ACCEPT
