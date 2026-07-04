@@ -2,7 +2,7 @@ pkgs:
 with pkgs; [
     ax25-apps
     ax25-tools
-    cqrlog
+    # cqrlog # unmaintained?
     hamlib
     minimodem
     multimon-ng
