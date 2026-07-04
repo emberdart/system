@@ -14,9 +14,10 @@ with pkgs; [
     gnucap
     # horizon-eda
     kdePackages.kate
-    librepcb
+    # librepcb # lots of missing packages
     logisim
     logisim-evolution
+    neovim-qt
     ngspice
     pcb
     # python314Packages.cirq-web # presumably dependent on core
@@ -30,7 +31,7 @@ with pkgs; [
     # qucs
     # stlink # won't build
     # tkgate # won't build
-    vscode # insiders?
+    vscodium # insiders?
     # x11docker
     # xcircuit # no longer builds
 ] ++ (if builtins.currentSystem == "x86_64-linux" then [

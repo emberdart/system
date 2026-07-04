@@ -8,6 +8,7 @@ let pkgs-x86_64 = import <nixos> {
 in
 with pkgs; [
     aha # for formatting the output of the firmware section of the Info Centre
+    android-tools
     bluez-alsa
     bluez-tools
     btop
@@ -31,7 +32,7 @@ with pkgs; [
     jmtpfs
     jnettop
     kexec-tools
-    linux_logo
+    # linux_logo # *** buffer overflow detected ***: terminated
     lm_sensors
     lshw
     lsof
@@ -41,6 +42,7 @@ with pkgs; [
     ncdu
     networkmanager # possibly unneeded
     nix-index
+    nixfmt
     ntfs3g
     obexfs
     obexftp

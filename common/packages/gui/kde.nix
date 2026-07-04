@@ -16,6 +16,7 @@ pkgs:
     ark
     # artikulate
     # audiotube
+    aurorae
     # bomber # failed to build because of libkdegames -> 7zz
     # bovo # failed to build because of libkdegames -> 7zz
     breeze

@@ -11,7 +11,9 @@ with pkgs;
 [
     armitage
     # authy # broken
+    binaryninja-free
     burpsuite
     hashcat
+    # ida-free
     # plasma-pass # p5 eol
 ]

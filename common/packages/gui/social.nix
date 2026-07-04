@@ -56,12 +56,17 @@ with pkgs; [
     })
     discordchatexporter-cli
     discordchatexporter-desktop
-    matrix-appservice-discord
+    # matrix-appservice-discord # uses old node
     # mautrix-discord # no libolm
     music-discord-rpc
     # slack
     # skypeforlinux
     teams-for-linux
+    vencord
+    vencord-web-extension
+    webcord
+    webcord-vencord
+    # vesktop # pnpm vulnerable
     # zoom-us
 ] else [
    # pkgs-x86_64.betterdiscordctl

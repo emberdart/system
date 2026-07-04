@@ -9,14 +9,14 @@ in
 with pkgs; [
     dbeaver-bin
     # comet-gog
-    # etherape # failed to build goocanvas
+    etherape # failed to build goocanvas
     freerdp
     # mysql-workbench
     nextcloud-client
     putty # no desktop icon
     # rdesktop # no gui without config # fails to build
     # newman
-    # protonvpn-gui
+    # protonvpn-gui # ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
     # tightvnc # no gui without config # banned as insecure with no replacement suggested
     wireshark
 ] ++ (if builtins.currentSystem == "x86_64-linux" then [

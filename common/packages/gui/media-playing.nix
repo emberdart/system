@@ -10,7 +10,7 @@ with pkgs; [
     clementine
     # clementineUnfree # needs building?
     #ffmpeg-full #insecure for now
-    kaffeine
+    # kaffeine # it deed
     vlc
     gnome-network-displays
     # guvcview # FF_PROFILE consts undeclared - maybe they should update to AV

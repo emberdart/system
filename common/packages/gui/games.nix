@@ -41,6 +41,7 @@ with pkgs; [
     crossfire-maps
     crossfire-server
     # crrcsim # doesn't launch
+    darkplaces
     dolphin-emu
     pkgs-doomsday.doomsday-engine
     # haskellPackages.edge # cmdtheline is broken
@@ -89,6 +90,7 @@ with pkgs; [
     # openarena # no desktop icon # BIG # fails to build - https://github.com/OpenArena/engine/issues/94 https://github.com/NixOS/nixpkgs/issues/370954
     opendungeons # wtf
     openmw
+    openxcom
     outfly # no desktop icon # oooooh
     # padman?
     pokemon-cursor
@@ -160,7 +162,7 @@ with pkgs; [
     uqm
     # ut1999 # archive too slow
     # vangers # doesn't read some stuff
-    vdrift # big build
+    # vdrift # big build # unknown hostname svn.code.sf.net
     # veloren # error[E0076]: SIMD vector's only field must be an array /build/veloren-0.16.0-vendor/vek-0.17.0/src/quaternion.rs:132:9
     # warsow # ehh... no desktop icon
     # worldofgoo # from steam already
