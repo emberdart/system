@@ -12,11 +12,12 @@ with pkgs; [
     iodine
     irssi
     mailutils
+    net-tools
     nixops_unstable_full
     openvpn
     # postgrest
     # protonvpn-cli
-    protonvpn-gui
+    proton-vpn
     # python314Packages.mitmproxy # fails to build in python3.14-msgspec
     # msgspec/_core.c:2148:7: error: ‘_Py_IMMORTAL_REFCNT’ undeclared here (not in a function)
     # 2148 |     { _Py_IMMORTAL_REFCNT },
@@ -24,7 +25,7 @@ with pkgs; [
     # ngrok
     # proxytunnel # insecure openssl
     slirp4netns
-    wireguard-go
-    wireguard-tools
-    wireguard-ui
+    # ? wireguard-go
+    # ? wireguard-tools
+    # ? wireguard-ui
 ]
