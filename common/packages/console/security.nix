@@ -17,7 +17,7 @@ with pkgs; [
     sslstrip
     # rkhunter - not yet available
     sshuttle
-    tcpdump
+    # tcpdump # handled
     thc-hydra
     thc-secure-delete
     torsocks
