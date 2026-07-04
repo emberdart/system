@@ -6,8 +6,8 @@ let nixpkgs = import <nixpkgs> {
     };
 in {
   home = {
-    username = "dwd";
-    homeDirectory = "/home/dwd";
+    username = username;
+    homeDirectory = homeDirectory;
     packages = with nixpkgs; [
       cachix
       cmatrix
@@ -159,7 +159,7 @@ in {
       enable = true;
       networks = {
         freenode = {
-          nick = "dwd";
+          nick = username;
           server = {
             address = "chat.freenode.net";
             port = 6697;
@@ -176,8 +176,8 @@ in {
       enable = true;
       settings = {
         user = {
-          name = "Dan Dart";
-          email = "git@dandart.co.uk";
+          name = "Ember Dart";
+          email = "git@${domain}";
         };
         pull = {
           rebase = false;
@@ -193,13 +193,13 @@ in {
       # nix-env -f '<nixpkgs>' -qaP -A vimPlugins
       plugins = with pkgs.vimPlugins; [
         onedark-vim
-        fugitive
-        gundo
+        vim-fugitive
+        gundo-vim
         nerdtree
         haskell-vim
         # node
-        polyglot
-        taglist
+        vim-polyglot
+        taglist-vim
         vim-unimpaired
       ];
       settings = {
@@ -228,7 +228,7 @@ in {
         filetype indent on
         filetype plugin indent on " load filetype plugins/indent settings
         ":imap ;WEM dev@jolharg.com
-        :imap ;EM git@dandart.co.uk
+        :imap ;EM git@${domain}
         :imap ;D die(__FILE__ . ' : ' . __LINE__);
         :imap ;L console.log()
         " inoremap <C-D> <ESC>:call PhpDocSingle()<CR>i
