@@ -20,6 +20,7 @@ import ./astronomy.nix pkgs
     ++ import ./networking.nix pkgs
     ++ import ./office.nix pkgs
     ++ import ./phone.nix pkgs
+    ++ import ./printing.nix pkgs
     ++ import ./scanning.nix pkgs
     ++ import ./security.nix pkgs
     ++ import ./social.nix pkgs
