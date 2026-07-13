@@ -37,6 +37,11 @@ in {
       ];
     };
 
+    octoprint = {
+      enable = true;
+      plugins = plugins: with plugins; [ themeify stlviewer ];
+    };
+
     supergfxd = if isDesktop then {
       enable = true;
       settings = {
