@@ -7,10 +7,11 @@ let pkgs-x86_64 = import <nixos> {
     };
 in
 with pkgs; [
-    # blender # fails to build because of python3.11-openusd
+    blender
     geogebra
     gimp3
     inkscape
+    kicad
     krita
 ] ++ (if builtins.currentSystem == "x86_64-linux" then [
     # dia # ../plug-ins/pdf/pdf-import.cpp:728:16: error: 'class GooString' has no member named 'getLength'
