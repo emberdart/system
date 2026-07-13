@@ -61,6 +61,7 @@ with pkgs; [
     # galaxis # tui it's just battleships
     # gamehub # libsoup 2 is too vulnerable
     # garden-of-coloured-lights # much muchly
+    gnuchess
     # golly # now broken?
     hhexen
     ioquake3
@@ -121,6 +122,7 @@ with pkgs; [
     # haskellPackages.starrover2 # haskell98 is broken
     # speed_dreams # no desktop icon # keeps compiling
     stardust
+    stockfish
     # stuntrally # BIG
     # superTux # Bigish
     # superTuxKart # BIG
